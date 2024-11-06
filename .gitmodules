@@ -1,6 +1,4 @@
-[submodule "Gerenciamento_de_Controle_de_Escala_e_Ponto-BackEnd"]
-	path = Gerenciamento_de_Controle_de_Escala_e_Ponto-BackEnd
-	url = https://github.com/MarceloHOPV/Gerenciamento_de_Controle_de_Escala_e_Ponto-BackEnd.git
+submodule "Gerenciamento_de_Controle_de_Escala_e_Ponto-BackEnd"]
 [submodule "back_end"]
 	path = back_end
 	url = https://github.com/MarceloHOPV/Gerenciamento_de_Controle_de_Escala_e_Ponto-BackEnd.git
