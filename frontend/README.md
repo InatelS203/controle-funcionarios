@@ -48,3 +48,13 @@ export default tseslint.config({
   },
 })
 ```
+## **Configurando o Front-end**
+
+### **Passos para configuração:**
+
+1. **Acesse a pasta do front-end**:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
