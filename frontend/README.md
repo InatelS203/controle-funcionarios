@@ -55,6 +55,10 @@ export default tseslint.config({
 1. **Acesse a pasta do front-end**:
    ```bash
    cd frontend
+2. **Instale o npm**
+   ```bash
    npm install
+4. **Inicie o front-end em modo de desenvolvimento:**
+   ```bash
    npm run dev
    ```
