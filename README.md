@@ -38,3 +38,4 @@ O sistema segue princípios de design bem definidos para garantir modularidade, 
 1. Clone este repositório:
    ```bash
    git clone <URL_DO_REPOSITORIO>
+2. Configure os ambientes do back-end e front-end conforme os readmes individuais.
