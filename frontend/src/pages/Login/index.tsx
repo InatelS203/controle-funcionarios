@@ -1,18 +1,18 @@
 import { Button } from "../../components/Form/Button/Button";
 import { Input } from "../../components/Form/Input/Input";
-import { Container, FormContainer } from "./styles";
+import { Container, FormContainer, Title } from "./styles";
 
 export const Login = () => {
   return (
     <Container>
       <FormContainer>
+        <Title>Controle de Funcionários</Title>
         <Input
           label="E-mail"
           placeholder="Entre com seu e-mail"
           id="email"
           type="email"
           required
-          value=""
           onChange={() => {}}
         />
         <Input
@@ -21,7 +21,6 @@ export const Login = () => {
           id="senha"
           type="password"
           required
-          value={""}
           onChange={() => {}}
         ></Input>
         <Button text="Entrar" />
