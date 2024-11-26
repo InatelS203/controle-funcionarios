@@ -18,6 +18,8 @@ export default {
         SOFT_GRAY: "#D3D3D3",
         VERY_LIGHT_GRAY: "#E0E0E0",
         GHOST_GRAY: "#F0F0F0",
+        BLUE: "#1E90FF",
+        LIGHT_BLUE: "#87CEFA",
     },
 
     FONT_SIZE: {

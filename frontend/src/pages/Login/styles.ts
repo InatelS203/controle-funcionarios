@@ -10,7 +10,7 @@ export const Container = styled.div`
     background-color: ${theme.COLORS.VERY_LIGHT_GRAY};
 `
 
-export const FormContainer = styled.div`
+export const FormContainer = styled.form`
     width: 30vw;
     height: 60vh;
     display: flex;
@@ -25,6 +25,7 @@ export const FormContainer = styled.div`
 export const Title = styled.text`
 color: ${theme.COLORS.DARK_GRAY};
 font-size: ${theme.FONT_SIZE.LG};
+padding-bottom: 2rem;
 `
 
 export const Text = styled.text`
