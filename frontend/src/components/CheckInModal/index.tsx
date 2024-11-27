@@ -5,12 +5,16 @@ import { useState } from "react";
 
 export const CheckInModal = () => {
   const [open, setOpen] = useState(false);
-  //   const [time, setTime] = useState("10:00");
+
+  const handleCheckInBtn = () => {
+    // integrar back pra bater ponto
+    setOpen(true);
+  };
   return (
     <>
       <Dialog.Root open={open} onOpenChange={setOpen}>
         <Dialog.Trigger asChild>
-          <AddButton onClick={() => setOpen(true)}>Bater Ponto</AddButton>
+          <AddButton onClick={handleCheckInBtn}>Bater Ponto</AddButton>
         </Dialog.Trigger>
 
         <Dialog.Portal>
@@ -22,8 +26,8 @@ export const CheckInModal = () => {
             }}
           />
           <Content>
-            <Dialog.Title style={{ textAlign: "center" }}>
-              Bater ponto
+            <Dialog.Title style={{ textAlign: "center", fontSize: 14 }}>
+              Ponto batido com sucesso!
             </Dialog.Title>
             <CloseButton>
               <IoIosClose size={30} />

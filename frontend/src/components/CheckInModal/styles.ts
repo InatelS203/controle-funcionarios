@@ -22,16 +22,16 @@ export const CloseButton = styled(Dialog.Close)`
   position: absolute;
   background: transparent;
   border: 0;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 0.4rem;
+  right: 0.4rem;
   line-height: 0;
   cursor: pointer;
 `
 
 export const Content = styled(Dialog.Content)`
     background-color: white;
-    width: 40%;
-    min-width: 400px;
+    width: 20%;
+    min-width: 200px;
     padding: 3rem;
     border-radius: 8px;
     position: fixed;
