@@ -16,6 +16,15 @@ export const NewEmployee = () => {
           onChange={() => {}}
         />
         <Input
+          label="CPF"
+          placeholder="Entre com o CPF do novo funcionário"
+          id="cpf"
+          type="cpf"
+          required
+          value=""
+          onChange={() => {}}
+        />
+        <Input
           label="E-mail"
           placeholder="Entre com o e-mail do novo funcionário"
           id="email"

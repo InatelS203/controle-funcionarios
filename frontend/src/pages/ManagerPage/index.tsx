@@ -8,7 +8,7 @@ export const ManagerPage = () => {
   return (
     <Container>
         <Button text="Cadastrar funcionário" onClick={() => navigate('/cadastrar-funcionario')} />
-        <Button text="Ver funcionários" />
+        <Button text="Ver funcionários" onClick={() => navigate('/funcionarios')}/>
         <Button text="Gerar lista de salários mensais" />
     </Container>
   );
