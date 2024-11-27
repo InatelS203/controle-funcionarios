@@ -1,8 +1,13 @@
+import { useState } from "react";
 import { Button } from "../../components/Form/Button/Button";
 import { Input } from "../../components/Form/Input/Input";
 import { Container, FormContainer, Title } from "./styles";
+import { useNavigate } from "react-router";
 
 export const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
   return (
     <Container>
       <FormContainer>
@@ -13,7 +18,8 @@ export const Login = () => {
           id="email"
           type="email"
           required
-          onChange={() => {}}
+          value={email}
+          onChange={(e) => {}}
         />
         <Input
           label="Senha"
