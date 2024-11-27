@@ -1,4 +1,4 @@
-import { Button } from "../../components/Form/Button/Button";
+import { CheckInModal } from "../../components/CheckInModal";
 import {
   BtnContainer,
   Container,
@@ -31,7 +31,7 @@ export const EmployeeControl = () => {
           <b>Telefone:</b> (35) 99999-9999{" "}
         </Text>
         <BtnContainer>
-          <Button text="Bater ponto"></Button>
+          <CheckInModal />
         </BtnContainer>
       </InfoContainer>
     </Container>
