@@ -1,5 +1,5 @@
 import { Button } from "../../components/Form/Button/Button";
-import { Container } from "./styles";
+import { BtnContainer, Container, Title } from "./styles";
 import { useNavigate } from "react-router";
 
 export const ManagerPage = () => {
@@ -7,12 +7,18 @@ export const ManagerPage = () => {
 
   return (
     <Container>
-      <Button
-        text="Cadastrar funcionário"
-        onClick={() => navigate("/newemployee")}
-      />
-      <Button text="Ver funcionários" onClick={() => navigate("/employees")} />
-      <Button text="Gerar lista de salários mensais" />
+      <BtnContainer>
+        <Title>Gerenciar funcionários:</Title>
+        <Button
+          text="Cadastrar funcionário"
+          onClick={() => navigate("/newemployee")}
+        />
+        <Button
+          text="Ver funcionários"
+          onClick={() => navigate("/employees")}
+        />
+        <Button text="Gerar lista de salários mensais" />
+      </BtnContainer>
     </Container>
   );
 };

@@ -10,13 +10,14 @@ export const Container = styled.div`
     background-color: ${theme.COLORS.VERY_LIGHT_GRAY};
 `
 
-export const FormContainer = styled.div`
+export const BtnContainer = styled.div`
     width: 30vw;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 1rem;
     align-items: center;
+    justify-content: center;
     background-color: ${theme.COLORS.WHITE};
     border: 1px solid transparent;
     border-radius: 8px;

@@ -10,21 +10,28 @@ export const Container = styled.div`
     background-color: ${theme.COLORS.VERY_LIGHT_GRAY};
 `
 
-export const FormContainer = styled.div`
-    width: 30vw;
-    height: 60vh;
+export const ListContainer = styled.div`
+    width: 50vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 1rem;
     align-items: center;
     background-color: ${theme.COLORS.WHITE};
     border: 1px solid transparent;
     border-radius: 8px;
 `
-
+export const EmployeeBox = styled.div`
+    background-color: ${theme.COLORS.VERY_LIGHT_GRAY};
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+`
 export const Title = styled.text`
 color: ${theme.COLORS.DARK_GRAY};
 font-size: ${theme.FONT_SIZE.LG};
+padding-bottom: 2rem;
 `
 
 export const Text = styled.text`

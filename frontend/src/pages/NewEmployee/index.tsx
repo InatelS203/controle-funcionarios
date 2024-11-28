@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { Button } from "../../components/Form/Button/Button";
 import { Input } from "../../components/Form/Input/Input";
 import { Container, FormContainer } from "./styles";
+import { useEmployeeList } from "../../store/Employee";
+import { useNavigate } from "react-router";
 
 export const NewEmployee = () => {
   const [name, setName] = useState("");
   const [cpf, setCpf] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const { employeeList, addEmployee } = useEmployeeList();
+  const navigate = useNavigate();
+
+  const handleSubmit = (event: FormEvent) => {
+    event.preventDefault();
+    addEmployee({ name, cpf, email, password });
+    console.log(employeeList);
+    navigate("/employees");
+  };
   return (
     <Container>
-      <FormContainer>
+      <FormContainer onSubmit={handleSubmit}>
         <Input
           label="Nome"
           placeholder="Entre com o nome do novo funcionário"
