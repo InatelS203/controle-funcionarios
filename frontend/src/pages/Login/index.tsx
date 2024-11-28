@@ -8,9 +8,21 @@ export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+
+  const handleLogin = () => {
+    if (email === "funcionario@email") {
+      navigate("/employee");
+    } else if (email === "gerente@email") {
+      navigate("/manager");
+    } else {
+      alert("email ou senha incorretos!");
+      setEmail("");
+      setPassword("");
+    }
+  };
   return (
     <Container>
-      <FormContainer>
+      <FormContainer onSubmit={handleLogin}>
         <Title>Controle de Funcionários</Title>
         <Input
           label="E-mail"
@@ -19,15 +31,20 @@ export const Login = () => {
           type="email"
           required
           value={email}
-          onChange={(e) => {}}
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
         />
         <Input
           label="Senha"
           placeholder="Digite sua senha"
           id="senha"
           type="password"
+          value={password}
           required
-          onChange={() => {}}
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
         ></Input>
         <Button text="Entrar" />
       </FormContainer>
